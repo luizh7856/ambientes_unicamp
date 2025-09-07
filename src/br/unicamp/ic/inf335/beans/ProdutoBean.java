@@ -66,14 +66,19 @@ public class ProdutoBean implements java.io.Serializable, Comparable<ProdutoBean
 	
 	@Override
 	public int compareTo(ProdutoBean p) {
-		if (valor > p.getValor()) {
+		if (valor < p.getValor()) {
 			return 1;
 		} else if (valor > p.getValor()) {
 			return -1;
 		} else
 		    return 0;
 	}
-	
-	
+
+//	Codigo = CD00001 Nome = Celular Galaxy S10 Valor = 1250.0
+//	Codigo = CD00002 Nome = Prod 2 ... Valor = 1100.0
+//	Codigo = CD00003 Nome = Prod 3 ... Valor = 120.0
+//	Codigo = CD00004 Nome = Prod 4 ... Valor = 1300.0
+//	Codigo = CD00005 Nome = Prod 5 ... Valor = 9400.0
+//	Codigo = CD00006 Nome = Prod 6 ... Valor = 1500.0
 
 }
